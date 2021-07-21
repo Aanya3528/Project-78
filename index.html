@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Project 78</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+<h1><u>Family Array</u></h1>
+
+<img id="images_family" src="Family.jpeg">
+<h4 id="family_name">Family Book</h4>
+<button onclick="update();">Next</button>
+
+<script>
+    var images=["Family.jpeg","Nani.jpeg","Dadu.jpeg","Dadi.jpeg","Papa.jpeg","Mom.jpeg","Me.jpeg","Sister.jpeg"];
+    var names=["My Familiy Book","Indu Bala Chhabra","Harish Arora","Asha Arora","Ankur Arora","Surabhi Chhabra","Aanya Arora","Annika Arora"];
+    var i=0;
+    function update()
+    {
+        i++;
+        var no_of_members=7;
+        if(i>no_of_members){
+            i=0;
+        }
+        var updatedImage=images[i];
+        var updatedNames=names[i];
+        document.getElementById("images_family").src = updatedImage;
+        document.getElementById("family_name").innerHTML = updatedNames;
+    }
+    
+</script>
+</center>
+</body>
